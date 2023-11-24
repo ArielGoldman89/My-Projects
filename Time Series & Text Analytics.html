@@ -14577,7 +14577,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14628,6 +14628,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="c1"># If you want to save the visualisation data</span>
 <span class="kn">import</span> <span class="nn">pickle</span> 
+
+<span class="kn">from</span> <span class="nn">nltk.sentiment</span> <span class="kn">import</span> <span class="n">SentimentIntensityAnalyzer</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;vader_lexicon&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">statistics</span>
 </pre></div>
 
      </div>
@@ -14652,6 +14659,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <pre>[nltk_data] Downloading package stopwords to
 [nltk_data]     C:\Users\ariel\AppData\Roaming\nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package vader_lexicon to
+[nltk_data]     C:\Users\ariel\AppData\Roaming\nltk_data...
+[nltk_data]   Package vader_lexicon is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\ariel\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
 </pre>
 </div>
 </div>
@@ -20602,22 +20615,6 @@ Name: predicted_mean, dtype: float64</pre>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -20634,7 +20631,7 @@ Name: predicted_mean, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># UnicodeDecodeError: &#39;utf-8&#39; codec can&#39;t decode byte 0x89 in position 2127: invalid start byte</span>
@@ -22518,7 +22515,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Reset Index</span>
@@ -22535,7 +22532,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Getting our texts in a list to process</span>
@@ -22558,7 +22555,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
@@ -23578,7 +23575,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_text</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">text</span><span class="p">})</span>
@@ -23601,7 +23598,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
@@ -36715,7 +36712,7 @@ if(typeof(LDAvis) !== "undefined"){
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remove punctuation</span>
@@ -37116,15 +37113,38 @@ if(typeof(LDAvis) !== "undefined"){
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Sentiment-Analysis">Sentiment Analysis<a class="anchor-link" href="#Sentiment-Analysis">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Valance Aware Dictionary sEntiment Reasoner</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sia</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -37137,10 +37157,10 @@ if(typeof(LDAvis) !== "undefined"){
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_sentiment</span> <span class="o">=</span> <span class="n">df_text</span>
 </pre></div>
 
      </div>
@@ -37153,15 +37173,65 @@ if(typeof(LDAvis) !== "undefined"){
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">compound_score</span><span class="p">(</span><span class="n">processsed_text</span><span class="p">):</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">sia</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="n">sentence</span><span class="p">)[</span><span class="s1">&#39;compound&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">processsed_text</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">processsed_text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">statistics</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Random Tweet</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Random Tweet:</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">text_sentiment</span><span class="p">[</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">][</span><span class="mi">50</span><span class="p">],</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Compound Score:&#39;</span><span class="p">,</span><span class="n">compound_score</span><span class="p">(</span><span class="n">text_sentiment</span><span class="p">[</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">][</span><span class="mi">50</span><span class="p">]))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Random Tweet:
+
+ promising @fanniemae is paying back more $ to us taxpayers reinforces 5 yrs after crash we need #gsereform to help prevent another bailout 
+
+Compound Score: 0.34
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -37169,15 +37239,409 @@ if(typeof(LDAvis) !== "undefined"){
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_sentiment</span><span class="p">[</span><span class="s1">&#39;Compound Score&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">compound_score</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">text_sentiment</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Top-10-Positive-Sentiment">Top 10 Positive Sentiment<a class="anchor-link" href="#Top-10-Positive-Sentiment">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_sentiment</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Compound Score&#39;</span><span class="p">)[[</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">,</span> <span class="s1">&#39;Compound Score&#39;</span><span class="p">]]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>processsed_text</th>
+      <th>Compound Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4198</th>
+      <td>as families across ohio and around america joi...</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <th>4284</th>
+      <td>great visit with the girls and guys of freedom...</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>1881</th>
+      <td>congrats to ambkenquinn &amp;amp;john ruahfor outs...</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <th>4562</th>
+      <td>zephaniah 3:17 the lord thy god in the midst o...</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>2885</th>
+      <td>i was honored to participate in the stafford h...</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>4111</th>
+      <td>great showing of #fl18 community support at to...</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>1373</th>
+      <td>i am excited and honored to accept the humane ...</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <th>870</th>
+      <td>i encourage my friends in the 6th district to ...</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>4711</th>
+      <td>i had the pleasure of skyping into the dublin ...</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <th>2356</th>
+      <td>special congratulations to all the volunteers ...</td>
+      <td>0.93</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="The-most-positive-Tweets">The most positive Tweets<a class="anchor-link" href="#The-most-positive-Tweets">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">text_sentiment</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Compound Score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">][</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**************************************************************************************************************&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>as families across ohio and around america join together to celebrate this special holiday and the promise it holds for a better and more peaceful world i want to wish everyone a happy easter
+**************************************************************************************************************
+great visit with the girls and guys of freedom school a summer program through unc charlotte to encourage reading promote self esteem and opportunity &amp; develop a love of learning
+**************************************************************************************************************
+congrats to ambkenquinn &amp;amp;john ruahfor outstanding 3day program at desmoines world food prize honoring this year prize winner sanjaya rajaram
+**************************************************************************************************************
+zephaniah 3:17 the lord thy god in the midst of thee is mighty; he will save he will rejoice over thee with joy; he will rest in his love he will joy over thee with singing
+**************************************************************************************************************
+i was honored to participate in the stafford historical societyûªs recent tribute to the historic warren mill which recently reopened as the headquarters of the american woolen co  after working with ownership state and local leaders and the talented workforce to help revive this eastern connecticut landmark i was pleased to join in this exciting celebration of the millûªs history and future
+**************************************************************************************************************
+great showing of #fl18 community support at today&#39;s event honoring the life of andrew &#34;red&#34; harris and his legacy by promoting artificial reefs to benefit our marine environment which he loved so much
+**************************************************************************************************************
+i am excited and honored to accept the humane champion award from the @humanesociety today for my support of animal protection legislation
+**************************************************************************************************************
+i had the pleasure of skyping into the dublin city council meeting last night to thank my good friend mayor tim sbranti for his years of leadership and welcome incoming dublin mayor david haubert
+**************************************************************************************************************
+i encourage my friends in the 6th district to head down ky state bbq festival in danville benefitting the united way http://tco/xjjmvjskfr
+**************************************************************************************************************
+special congratulations to all the volunteers honored @unitedwaycle they do an amazing job #uwcle #oh16
+**************************************************************************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Top-10-Negative-Sentiment">Top 10 Negative Sentiment<a class="anchor-link" href="#Top-10-Negative-Sentiment">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">text_sentiment</span><span class="o">.</span><span class="n">nsmallest</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Compound Score&#39;</span><span class="p">)[[</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">,</span> <span class="s1">&#39;Compound Score&#39;</span><span class="p">]]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>processsed_text</th>
+      <th>Compound Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1939</th>
+      <td>instead of fighting a war on #cancer tea party...</td>
+      <td>-0.92</td>
+    </tr>
+    <tr>
+      <th>2033</th>
+      <td>#obamacare signed 4 years ago today; a bad law...</td>
+      <td>-0.89</td>
+    </tr>
+    <tr>
+      <th>2879</th>
+      <td>from today's editorial in the new york times: ...</td>
+      <td>-0.89</td>
+    </tr>
+    <tr>
+      <th>2880</th>
+      <td>also from the new york times series on the fai...</td>
+      <td>-0.89</td>
+    </tr>
+    <tr>
+      <th>1499</th>
+      <td>4 tests for isis strategy: 3) stay out of the ...</td>
+      <td>-0.88</td>
+    </tr>
+    <tr>
+      <th>4450</th>
+      <td>a crawfordsville woman with cancer is sufferin...</td>
+      <td>-0.88</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>senate will be done but mess inhouse:republica...</td>
+      <td>-0.87</td>
+    </tr>
+    <tr>
+      <th>740</th>
+      <td>iûªve fought devastating defense cuts for 2 y...</td>
+      <td>-0.87</td>
+    </tr>
+    <tr>
+      <th>2634</th>
+      <td>why are the five taliban terrorists released f...</td>
+      <td>-0.87</td>
+    </tr>
+    <tr>
+      <th>819</th>
+      <td>the #irs's gross abuse of power would have our...</td>
+      <td>-0.86</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="The-most-negative-Tweets">The most negative Tweets<a class="anchor-link" href="#The-most-negative-Tweets">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">text_sentiment</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Compound Score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">][</span><span class="s1">&#39;processsed_text&#39;</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**************************************************************************************************************&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>instead of fighting a war on #cancer tea party is waging a war on cancer patients http://tco/9mavfy9f3y
+**************************************************************************************************************
+#obamacare signed 4 years ago today; a bad law made worse by errors misinformation &amp;amp; costly regulations: http://tco/aszzr9cxbk #fullrepeal
+**************************************************************************************************************
+from today&#39;s editorial in the new york times: &#34;itûªs time to bring the marijuana market out into the open and end the injustice of arrests and convictions that have devastated communities&#34;
+**************************************************************************************************************
+also from the new york times series on the failed #warondrugs: &#34;a majority [of americans] believe that the war on marijuana has failed and that itûªs time to end it&#34;
+**************************************************************************************************************
+4 tests for isis strategy: 3) stay out of the syrian civil war; this could badly backfire on us if we get it wrong
+**************************************************************************************************************
+a crawfordsville woman with cancer is suffering because president obama lied about her obamacare choices
+**************************************************************************************************************
+iûªve fought devastating defense cuts for 2 years b/c they threaten to put tens of thousands of soldiers out of work:http://tco/ivo1qw1sdz
+**************************************************************************************************************
+senate will be done but mess inhouse:republican hardliners block strategy to avoid shutdown  @washingtonpost http://tco/arxkbe8bbk
+**************************************************************************************************************
+why are the five taliban terrorists released from gitmo no longer considered a high-risk threat
+**************************************************************************************************************
+the #irs&#39;s gross abuse of power would have our founding fathers rolling in their graves http://tco/yzjcaxjpsg
+**************************************************************************************************************
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
