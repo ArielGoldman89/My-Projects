@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6135b3752a30eac12acfaf0a6c68dd69 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6135b3752a30eac12acfaf0a6c68dd69" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6135b3752a30eac12acfaf0a6c68dd69 = L.map(
+                "map_6135b3752a30eac12acfaf0a6c68dd69",
+                {
+                    center: [-34.6118, -58.4173],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf018f3411b68fcec6f2531b0017fe71 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf018f3411b68fcec6f2531b0017fe71.addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var marker_fbfdccf6c3c3f1bbe02add050365b50e = L.marker(
+                [-34.63575018, -58.39892759],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_e287af10d41a937ad39d81e16c2e0532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fbfdccf6c3c3f1bbe02add050365b50e.setIcon(icon_e287af10d41a937ad39d81e16c2e0532);
+        
+    
+            marker_fbfdccf6c3c3f1bbe02add050365b50e.bindTooltip(
+                `<div>
+                     Estacion: CASEROS<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be677305613ae1eb31b749f0a1eba29e = L.marker(
+                [-34.62937566, -58.40096956],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_72d1d317fdc5dbd72ef5c758e4437cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be677305613ae1eb31b749f0a1eba29e.setIcon(icon_72d1d317fdc5dbd72ef5c758e4437cd1);
+        
+    
+            marker_be677305613ae1eb31b749f0a1eba29e.bindTooltip(
+                `<div>
+                     Estacion: INCLAN - MEZQUITA AL AHMAD<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5f678a83f2df8f57b46a5fa63a91da7 = L.marker(
+                [-34.62309232, -58.40232273],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_370587a6ba2bcea0e1d2c711bcddeecc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c5f678a83f2df8f57b46a5fa63a91da7.setIcon(icon_370587a6ba2bcea0e1d2c711bcddeecc);
+        
+    
+            marker_c5f678a83f2df8f57b46a5fa63a91da7.bindTooltip(
+                `<div>
+                     Estacion: HUMBERTO 1°<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4a5e35f494bb46d5f2dc71ecf05a000 = L.marker(
+                [-34.61524215, -58.40473172],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_1e327836470156740932273dc23e0ea1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4a5e35f494bb46d5f2dc71ecf05a000.setIcon(icon_1e327836470156740932273dc23e0ea1);
+        
+    
+            marker_f4a5e35f494bb46d5f2dc71ecf05a000.bindTooltip(
+                `<div>
+                     Estacion: VENEZUELA<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_456eadcbffe1a9db3ddce88c7b7216e8 = L.marker(
+                [-34.60893524, -58.40603638],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_8fd9fd6f25e8eaf5f897c638867463f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_456eadcbffe1a9db3ddce88c7b7216e8.setIcon(icon_8fd9fd6f25e8eaf5f897c638867463f7);
+        
+    
+            marker_456eadcbffe1a9db3ddce88c7b7216e8.bindTooltip(
+                `<div>
+                     Estacion: ONCE - 30 DE DICIEMBRE<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42cb66dac65ebb8558068ff2e353bdc6 = L.marker(
+                [-34.6042452, -58.38057434],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_bacf102a9a5df883c0e00727b8fa69a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_42cb66dac65ebb8558068ff2e353bdc6.setIcon(icon_bacf102a9a5df883c0e00727b8fa69a3);
+        
+    
+            marker_42cb66dac65ebb8558068ff2e353bdc6.bindTooltip(
+                `<div>
+                     Estacion: 9 DE JULIO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d00bd39177747b0b9c3f0c6dc5bbf64 = L.marker(
+                [-34.59975708, -58.39792376],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_0e692ac370b05ef9df3472bf64f8b27d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1d00bd39177747b0b9c3f0c6dc5bbf64.setIcon(icon_0e692ac370b05ef9df3472bf64f8b27d);
+        
+    
+            marker_1d00bd39177747b0b9c3f0c6dc5bbf64.bindTooltip(
+                `<div>
+                     Estacion: FACULTAD DE MEDICINA<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f486b1cb1aa66cec4e5eadfbaa3b1dee = L.marker(
+                [-34.60158717, -58.38514236],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_10ee4dce1716c03b7f74900e8d9990a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f486b1cb1aa66cec4e5eadfbaa3b1dee.setIcon(icon_10ee4dce1716c03b7f74900e8d9990a5);
+        
+    
+            marker_f486b1cb1aa66cec4e5eadfbaa3b1dee.bindTooltip(
+                `<div>
+                     Estacion: TRIBUNALES - TEATRO COLÃN<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3cc414ff28624929961e49dcd6faf70 = L.marker(
+                [-34.59162784, -58.40716132],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_93bb2ae82889c1bb9e8b167d2fdce3f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b3cc414ff28624929961e49dcd6faf70.setIcon(icon_93bb2ae82889c1bb9e8b167d2fdce3f1);
+        
+    
+            marker_b3cc414ff28624929961e49dcd6faf70.bindTooltip(
+                `<div>
+                     Estacion: AGUERO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1cf88489a00f1fe7c36b4b183aef4d8 = L.marker(
+                [-34.58515594, -58.41595542],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_32f5f6959962bf2926c347313e2466d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d1cf88489a00f1fe7c36b4b183aef4d8.setIcon(icon_32f5f6959962bf2926c347313e2466d4);
+        
+    
+            marker_d1cf88489a00f1fe7c36b4b183aef4d8.bindTooltip(
+                `<div>
+                     Estacion: R.SCALABRINI ORTIZ<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b5158b09832b602e6c18422070cb7f9 = L.marker(
+                [-34.58141119, -58.42119601],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_66203a93b00773506a5c9f13eb1c90c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5b5158b09832b602e6c18422070cb7f9.setIcon(icon_66203a93b00773506a5c9f13eb1c90c9);
+        
+    
+            marker_5b5158b09832b602e6c18422070cb7f9.bindTooltip(
+                `<div>
+                     Estacion: PLAZA ITALIA<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe3c730f82e26749554a7dc77128d569 = L.marker(
+                [-34.57842202, -58.42571144],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_c069e6629221e8adfab05e57869394ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fe3c730f82e26749554a7dc77128d569.setIcon(icon_c069e6629221e8adfab05e57869394ae);
+        
+    
+            marker_fe3c730f82e26749554a7dc77128d569.bindTooltip(
+                `<div>
+                     Estacion: PALERMO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5ddd00892bb8f9127a4b3e15603b600 = L.marker(
+                [-34.59119381, -58.37401822],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_e74d6b9ff08e89e5dfa74c81232493cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_a5ddd00892bb8f9127a4b3e15603b600.setIcon(icon_e74d6b9ff08e89e5dfa74c81232493cf);
+        
+    
+            marker_a5ddd00892bb8f9127a4b3e15603b600.bindTooltip(
+                `<div>
+                     Estacion: RETIRO<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5576afeedfa3b291f35fc3b056d882d4 = L.marker(
+                [-34.60176992, -58.37815578],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_9d2b2a232cce3203d3394a85c27377cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_5576afeedfa3b291f35fc3b056d882d4.setIcon(icon_9d2b2a232cce3203d3394a85c27377cb);
+        
+    
+            marker_5576afeedfa3b291f35fc3b056d882d4.bindTooltip(
+                `<div>
+                     Estacion: LAVALLE<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af5937702fcf6dd1be77667b344b1134 = L.marker(
+                [-34.60484374, -58.37952998],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_5d565ce435f5f22713a4a872de33fd82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_af5937702fcf6dd1be77667b344b1134.setIcon(icon_5d565ce435f5f22713a4a872de33fd82);
+        
+    
+            marker_af5937702fcf6dd1be77667b344b1134.bindTooltip(
+                `<div>
+                     Estacion: DIAGONAL NORTE<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e738e190dfa05f2758ae528b2c7654e = L.marker(
+                [-34.60898331, -58.38061072],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_52a9f6968c190d1a3c5eb49b92aa6804 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_6e738e190dfa05f2758ae528b2c7654e.setIcon(icon_52a9f6968c190d1a3c5eb49b92aa6804);
+        
+    
+            marker_6e738e190dfa05f2758ae528b2c7654e.bindTooltip(
+                `<div>
+                     Estacion: AV. DE MAYO<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc3cce773c71732f5a79061c5243e0d7 = L.marker(
+                [-34.61261728, -58.38044447],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_1fafdaee6a09402c896fd7da26896ba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_dc3cce773c71732f5a79061c5243e0d7.setIcon(icon_1fafdaee6a09402c896fd7da26896ba3);
+        
+    
+            marker_dc3cce773c71732f5a79061c5243e0d7.bindTooltip(
+                `<div>
+                     Estacion: MORENO<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e425d8916aed5ed86f6f50b6835e535 = L.marker(
+                [-34.6181256, -58.38017361],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_f8bebb33562083fc953893249f9d7ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_3e425d8916aed5ed86f6f50b6835e535.setIcon(icon_f8bebb33562083fc953893249f9d7ea2);
+        
+    
+            marker_3e425d8916aed5ed86f6f50b6835e535.bindTooltip(
+                `<div>
+                     Estacion: INDEPENDENCIA<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ccc7a7d0a9a558540596bae3c046fce = L.marker(
+                [-34.62761945, -58.38143443],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_a4d3bbc8b578513428a10dd58199106f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_8ccc7a7d0a9a558540596bae3c046fce.setIcon(icon_a4d3bbc8b578513428a10dd58199106f);
+        
+    
+            marker_8ccc7a7d0a9a558540596bae3c046fce.bindTooltip(
+                `<div>
+                     Estacion: CONSTITUCION<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ba08b002fa13c927c6c405f04b02e7f = L.marker(
+                [-34.60329729, -58.37507152],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_e433891cc4065bb647addea7edc78e6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0ba08b002fa13c927c6c405f04b02e7f.setIcon(icon_e433891cc4065bb647addea7edc78e6e);
+        
+    
+            marker_0ba08b002fa13c927c6c405f04b02e7f.bindTooltip(
+                `<div>
+                     Estacion: FLORIDA<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f478cac0b097d214633e7f2d28f6bf35 = L.marker(
+                [-34.60363711, -58.38071485],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_17a2e22a1782e5be9cbb4aaf077318db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f478cac0b097d214633e7f2d28f6bf35.setIcon(icon_17a2e22a1782e5be9cbb4aaf077318db);
+        
+    
+            marker_f478cac0b097d214633e7f2d28f6bf35.bindTooltip(
+                `<div>
+                     Estacion: C. PELLEGRINI<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11745b7c174b3299600d77e10d024f94 = L.marker(
+                [-34.60409355, -58.38729613],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_8ffabbcadd7c8d0c3f1d86108f85d5b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_11745b7c174b3299600d77e10d024f94.setIcon(icon_8ffabbcadd7c8d0c3f1d86108f85d5b0);
+        
+    
+            marker_11745b7c174b3299600d77e10d024f94.bindTooltip(
+                `<div>
+                     Estacion: URUGUAY<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcf280c927547bbce6973de907c5a56d = L.marker(
+                [-34.60441954, -58.39231424],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_bd975de78f39255d2d54b863a0429162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bcf280c927547bbce6973de907c5a56d.setIcon(icon_bd975de78f39255d2d54b863a0429162);
+        
+    
+            marker_bcf280c927547bbce6973de907c5a56d.bindTooltip(
+                `<div>
+                     Estacion: CALLAO - MAESTRO ALFREDO BRAVO<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a144bb52532538528022bf1902935dc2 = L.marker(
+                [-34.60464297, -58.39947426],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_113ea80c51b03bc5e6948de605d36fc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a144bb52532538528022bf1902935dc2.setIcon(icon_113ea80c51b03bc5e6948de605d36fc0);
+        
+    
+            marker_a144bb52532538528022bf1902935dc2.bindTooltip(
+                `<div>
+                     Estacion: PASTEUR - AMIA<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28a65f099c8cf86440211708639c3985 = L.marker(
+                [-34.60458106, -58.40539944],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_a03b6673d2988ad7f61592490932df74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_28a65f099c8cf86440211708639c3985.setIcon(icon_a03b6673d2988ad7f61592490932df74);
+        
+    
+            marker_28a65f099c8cf86440211708639c3985.bindTooltip(
+                `<div>
+                     Estacion: PUEYRREDON<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f9c9d83e30dfd9c2edb671b0afc59d8 = L.marker(
+                [-34.60407952, -58.4117626],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_8d8f8933d0aade1a22642a420ab33c53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3f9c9d83e30dfd9c2edb671b0afc59d8.setIcon(icon_8d8f8933d0aade1a22642a420ab33c53);
+        
+    
+            marker_3f9c9d83e30dfd9c2edb671b0afc59d8.bindTooltip(
+                `<div>
+                     Estacion: CARLOS GARDEL<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76e595f6c81c259b24e4293314b7fc0c = L.marker(
+                [-34.6031649, -58.42096247],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_fe9d2b8d193d0cee62c28d5c69ea8fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76e595f6c81c259b24e4293314b7fc0c.setIcon(icon_fe9d2b8d193d0cee62c28d5c69ea8fd2);
+        
+    
+            marker_76e595f6c81c259b24e4293314b7fc0c.bindTooltip(
+                `<div>
+                     Estacion: ALMAGRO - MEDRANO<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a24f1c814153cbe8c303951b4a1a1d0e = L.marker(
+                [-34.60216223, -58.43127386],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_d6fc7f43a9d3a479b3f619dbb45b8bcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a24f1c814153cbe8c303951b4a1a1d0e.setIcon(icon_d6fc7f43a9d3a479b3f619dbb45b8bcb);
+        
+    
+            marker_a24f1c814153cbe8c303951b4a1a1d0e.bindTooltip(
+                `<div>
+                     Estacion: ANGEL GALLARDO<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6951128eb62136e3d3a72532c6827bc = L.marker(
+                [-34.59896736, -58.4397715],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_f1ea11dae5131d54499f7fcabfe46f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a6951128eb62136e3d3a72532c6827bc.setIcon(icon_f1ea11dae5131d54499f7fcabfe46f89);
+        
+    
+            marker_a6951128eb62136e3d3a72532c6827bc.bindTooltip(
+                `<div>
+                     Estacion: MALABIA - OSVALDO PUGLIESE<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f607d2f1dd797fa7bfac7359b4ef91b5 = L.marker(
+                [-34.59171815, -58.44757309],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_04d3a6aa4837f699bb4d398c1842114e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f607d2f1dd797fa7bfac7359b4ef91b5.setIcon(icon_04d3a6aa4837f699bb4d398c1842114e);
+        
+    
+            marker_f607d2f1dd797fa7bfac7359b4ef91b5.bindTooltip(
+                `<div>
+                     Estacion: DORREGO<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fde8e2fd3a1d53394d62b71503063eae = L.marker(
+                [-34.60855907, -58.37426773],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_ebbf6f70e5dcf832a2d29c62d86001ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_fde8e2fd3a1d53394d62b71503063eae.setIcon(icon_ebbf6f70e5dcf832a2d29c62d86001ef);
+        
+    
+            marker_fde8e2fd3a1d53394d62b71503063eae.bindTooltip(
+                `<div>
+                     Estacion: PERU<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84f73c3a4992e9cf86e8d86ce2ed49f2 = L.marker(
+                [-34.60888172, -58.37908515],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_d05ce2d0b822c02fa597bf40613fbdf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_84f73c3a4992e9cf86e8d86ce2ed49f2.setIcon(icon_d05ce2d0b822c02fa597bf40613fbdf8);
+        
+    
+            marker_84f73c3a4992e9cf86e8d86ce2ed49f2.bindTooltip(
+                `<div>
+                     Estacion: PIEDRAS<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56534a2b7ebee3e14a8a250fe1a89d8e = L.marker(
+                [-34.60909981, -58.3822324],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_ca59e8606ce384f8f564470dfcd02e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_56534a2b7ebee3e14a8a250fe1a89d8e.setIcon(icon_ca59e8606ce384f8f564470dfcd02e5f);
+        
+    
+            marker_56534a2b7ebee3e14a8a250fe1a89d8e.bindTooltip(
+                `<div>
+                     Estacion: LIMA<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d2ed414dbfe24bb3fff133f52beed9 = L.marker(
+                [-34.60941259, -58.38677719],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_64447c7e583d7ada596da383d46790bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b6d2ed414dbfe24bb3fff133f52beed9.setIcon(icon_64447c7e583d7ada596da383d46790bf);
+        
+    
+            marker_b6d2ed414dbfe24bb3fff133f52beed9.bindTooltip(
+                `<div>
+                     Estacion: SAENZ PEÑA<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ecbc27cc83bfaa33eb1a3ce786747db = L.marker(
+                [-34.60922568, -58.39266882],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_047ad2cdf799ac2fa54451213405d6b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5ecbc27cc83bfaa33eb1a3ce786747db.setIcon(icon_047ad2cdf799ac2fa54451213405d6b7);
+        
+    
+            marker_5ecbc27cc83bfaa33eb1a3ce786747db.bindTooltip(
+                `<div>
+                     Estacion: CONGRESO - PDTE. DR. RAUL R. ALFONSIN<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75e89221591b96223d84a30bbd4ab48e = L.marker(
+                [-34.60964596, -58.39842699],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_b70b9695462c10aaac815652a515b6f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_75e89221591b96223d84a30bbd4ab48e.setIcon(icon_b70b9695462c10aaac815652a515b6f6);
+        
+    
+            marker_75e89221591b96223d84a30bbd4ab48e.bindTooltip(
+                `<div>
+                     Estacion: PASCO<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf83557c51489750a8403cfdfb41a214 = L.marker(
+                [-34.60983358, -58.40120753],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_2fe02f7413a21f43e589c602e9ea0717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_bf83557c51489750a8403cfdfb41a214.setIcon(icon_2fe02f7413a21f43e589c602e9ea0717);
+        
+    
+            marker_bf83557c51489750a8403cfdfb41a214.bindTooltip(
+                `<div>
+                     Estacion: ALBERTI<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_374e32dcf1e831506d247ae61947d13d = L.marker(
+                [-34.60981725, -58.40670712],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_1a8725dabd6d7b3b5ff3a453fe7ffc90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_374e32dcf1e831506d247ae61947d13d.setIcon(icon_1a8725dabd6d7b3b5ff3a453fe7ffc90);
+        
+    
+            marker_374e32dcf1e831506d247ae61947d13d.bindTooltip(
+                `<div>
+                     Estacion: PLAZA DE MISERERE<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63f45e279af603bc495903f056193a14 = L.marker(
+                [-34.61078169, -58.41518571],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_d4cb3a946935fc9cce9b553d51145de3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_63f45e279af603bc495903f056193a14.setIcon(icon_d4cb3a946935fc9cce9b553d51145de3);
+        
+    
+            marker_63f45e279af603bc495903f056193a14.bindTooltip(
+                `<div>
+                     Estacion: LORIA<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9947342a07d963f2039e6a313c90ae9c = L.marker(
+                [-34.61177023, -58.42181567],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_2a5271630699c8e9196264721bf9950b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_9947342a07d963f2039e6a313c90ae9c.setIcon(icon_2a5271630699c8e9196264721bf9950b);
+        
+    
+            marker_9947342a07d963f2039e6a313c90ae9c.bindTooltip(
+                `<div>
+                     Estacion: CASTRO BARROS<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc8931efaf4901232f77a7feddbfadf9 = L.marker(
+                [-34.61520561, -58.42950032],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_068de50b8d8ce28d59ffe45c50f0d05b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_bc8931efaf4901232f77a7feddbfadf9.setIcon(icon_068de50b8d8ce28d59ffe45c50f0d05b);
+        
+    
+            marker_bc8931efaf4901232f77a7feddbfadf9.bindTooltip(
+                `<div>
+                     Estacion: RIO DE JANEIRO<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f31a538b3813dfff10a8207be7baeff = L.marker(
+                [-34.61827997, -58.43642853],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_2bc9775e2c9be67a240a5cadd4cfff76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_9f31a538b3813dfff10a8207be7baeff.setIcon(icon_2bc9775e2c9be67a240a5cadd4cfff76);
+        
+    
+            marker_9f31a538b3813dfff10a8207be7baeff.bindTooltip(
+                `<div>
+                     Estacion: ACOYTE<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df589df8433d8410940063edb4783ed5 = L.marker(
+                [-34.62040521, -58.44117763],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_1af319f561f65fd096369a39f5f6bfdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_df589df8433d8410940063edb4783ed5.setIcon(icon_1af319f561f65fd096369a39f5f6bfdb);
+        
+    
+            marker_df589df8433d8410940063edb4783ed5.bindTooltip(
+                `<div>
+                     Estacion: PRIMERA JUNTA<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3970094787a101b3b9695d0262fd8a8a = L.marker(
+                [-34.60924243, -58.37368422],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_f87b1deefc4d0a4546612ca20f29b4c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_3970094787a101b3b9695d0262fd8a8a.setIcon(icon_f87b1deefc4d0a4546612ca20f29b4c5);
+        
+    
+            marker_3970094787a101b3b9695d0262fd8a8a.bindTooltip(
+                `<div>
+                     Estacion: BOLIVAR<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf26444f9e3425348ce32fd388259d3e = L.marker(
+                [-34.61284911, -58.37758089],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_19779e0b7567f338d3e39af27748c817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cf26444f9e3425348ce32fd388259d3e.setIcon(icon_19779e0b7567f338d3e39af27748c817);
+        
+    
+            marker_cf26444f9e3425348ce32fd388259d3e.bindTooltip(
+                `<div>
+                     Estacion: BELGRANO<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea9ecd1fa2fde37031b67473766fad1d = L.marker(
+                [-34.61793739, -58.38153494],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_7636d29d3ae43352141e3f7a2bb2175d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ea9ecd1fa2fde37031b67473766fad1d.setIcon(icon_7636d29d3ae43352141e3f7a2bb2175d);
+        
+    
+            marker_ea9ecd1fa2fde37031b67473766fad1d.bindTooltip(
+                `<div>
+                     Estacion: INDEPENDENCIA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d19c77321195abcaf1714e00c79725f5 = L.marker(
+                [-34.62233949, -58.38514855],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_916d3d0da2b115c720818adb8c8bf53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d19c77321195abcaf1714e00c79725f5.setIcon(icon_916d3d0da2b115c720818adb8c8bf53b);
+        
+    
+            marker_d19c77321195abcaf1714e00c79725f5.bindTooltip(
+                `<div>
+                     Estacion: SAN JOSE<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99d309aeee16ce895ef727ac31fb3a93 = L.marker(
+                [-34.62271967, -58.3915117],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_4a57404b070726d4d917af242d3c1322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_99d309aeee16ce895ef727ac31fb3a93.setIcon(icon_4a57404b070726d4d917af242d3c1322);
+        
+    
+            marker_99d309aeee16ce895ef727ac31fb3a93.bindTooltip(
+                `<div>
+                     Estacion: ENTRE RIOS - RODOLFO WALSH<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26fafe565815fff0a8f3c5abc306ddd3 = L.marker(
+                [-34.62310987, -58.39706807],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_ccf1f61ebda7e62b0640b39681012458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_26fafe565815fff0a8f3c5abc306ddd3.setIcon(icon_ccf1f61ebda7e62b0640b39681012458);
+        
+    
+            marker_26fafe565815fff0a8f3c5abc306ddd3.bindTooltip(
+                `<div>
+                     Estacion: PICHINCHA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8fff8ea4d9b9effeb1d435c16e575f6 = L.marker(
+                [-34.62386571, -58.40293658],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_2e6b21853e2906abddc3f2af937b1f1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b8fff8ea4d9b9effeb1d435c16e575f6.setIcon(icon_2e6b21853e2906abddc3f2af937b1f1e);
+        
+    
+            marker_b8fff8ea4d9b9effeb1d435c16e575f6.bindTooltip(
+                `<div>
+                     Estacion: JUJUY<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aac1f77e288afb1a056d6333786d0042 = L.marker(
+                [-34.62465379, -58.40939078],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_fff70f2fe00e86f9c4b081da7f728bf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_aac1f77e288afb1a056d6333786d0042.setIcon(icon_fff70f2fe00e86f9c4b081da7f728bf3);
+        
+    
+            marker_aac1f77e288afb1a056d6333786d0042.bindTooltip(
+                `<div>
+                     Estacion: URQUIZA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cabee51afb0dc2a1ad6d158901fcc04a = L.marker(
+                [-34.62801755, -58.43381625],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_16cb6b09568d7b403373956c22a85690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cabee51afb0dc2a1ad6d158901fcc04a.setIcon(icon_16cb6b09568d7b403373956c22a85690);
+        
+    
+            marker_cabee51afb0dc2a1ad6d158901fcc04a.bindTooltip(
+                `<div>
+                     Estacion: JOSE MARIA MORENO<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_010a0f5e26db54f605fe4d23cead823f = L.marker(
+                [-34.63104184, -58.44217071],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_580bbcb255a6de1f3d5e6b39af706999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_010a0f5e26db54f605fe4d23cead823f.setIcon(icon_580bbcb255a6de1f3d5e6b39af706999);
+        
+    
+            marker_010a0f5e26db54f605fe4d23cead823f.bindTooltip(
+                `<div>
+                     Estacion: EMILIO MITRE<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab2bcd2536adc863c9798bdea045e965 = L.marker(
+                [-34.58823711, -58.4112939],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_db6434eeccd1cbcb06894995aa5567cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ab2bcd2536adc863c9798bdea045e965.setIcon(icon_db6434eeccd1cbcb06894995aa5567cc);
+        
+    
+            marker_ab2bcd2536adc863c9798bdea045e965.bindTooltip(
+                `<div>
+                     Estacion: BULNES<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b68ca85bd694ce1a55a2917c2136e871 = L.marker(
+                [-34.59442572, -58.40239534],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_58aeab13ed9c44d6ef83f9808b333f78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b68ca85bd694ce1a55a2917c2136e871.setIcon(icon_58aeab13ed9c44d6ef83f9808b333f78);
+        
+    
+            marker_b68ca85bd694ce1a55a2917c2136e871.bindTooltip(
+                `<div>
+                     Estacion: PUEYRREDON<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd13d618d94e6609ccc6535234252e1e = L.marker(
+                [-34.59963955, -58.39312518],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_f200cbea7f1dc49891ac9d674cfa80eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fd13d618d94e6609ccc6535234252e1e.setIcon(icon_f200cbea7f1dc49891ac9d674cfa80eb);
+        
+    
+            marker_fd13d618d94e6609ccc6535234252e1e.bindTooltip(
+                `<div>
+                     Estacion: CALLAO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc1be33de72326250299ca900e0107e7 = L.marker(
+                [-34.5950574, -58.37781905],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_33bc7ea8213e7f3d8c32ef740f7fe581 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_dc1be33de72326250299ca900e0107e7.setIcon(icon_33bc7ea8213e7f3d8c32ef740f7fe581);
+        
+    
+            marker_dc1be33de72326250299ca900e0107e7.bindTooltip(
+                `<div>
+                     Estacion: SAN MARTIN<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66670ad975508a88b767c0ea98f2b742 = L.marker(
+                [-34.62191673, -58.37992118],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_572b0ace854765cc00582d374dfb699b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "darkblue", "prefix": "fa"}
+            );
+            marker_66670ad975508a88b767c0ea98f2b742.setIcon(icon_572b0ace854765cc00582d374dfb699b);
+        
+    
+            marker_66670ad975508a88b767c0ea98f2b742.bindTooltip(
+                `<div>
+                     Estacion: SAN JUAN<br>Linea: C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3fec4ed27f750d8f794eaa5ceabff36 = L.marker(
+                [-34.63638919, -58.45027826],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_fa113bae8283105bbe0589943e70a5f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c3fec4ed27f750d8f794eaa5ceabff36.setIcon(icon_fa113bae8283105bbe0589943e70a5f7);
+        
+    
+            marker_c3fec4ed27f750d8f794eaa5ceabff36.bindTooltip(
+                `<div>
+                     Estacion: MEDALLA MILAGROSA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed812ae592da0e7421c5b339835592ed = L.marker(
+                [-34.62701547, -58.42678902],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_b83bfe114bdb068b8418a3f6eb8cb1eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ed812ae592da0e7421c5b339835592ed.setIcon(icon_b83bfe114bdb068b8418a3f6eb8cb1eb);
+        
+    
+            marker_ed812ae592da0e7421c5b339835592ed.bindTooltip(
+                `<div>
+                     Estacion: AV. LA PLATA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c8632fca8335b59728bebc3c0241bad = L.marker(
+                [-34.62536611, -58.41553282],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_773c5920e1efc889482a3c5aafef2b05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5c8632fca8335b59728bebc3c0241bad.setIcon(icon_773c5920e1efc889482a3c5aafef2b05);
+        
+    
+            marker_5c8632fca8335b59728bebc3c0241bad.bindTooltip(
+                `<div>
+                     Estacion: BOEDO<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bac0a6a977e7e9eeb01db395223ebd4c = L.marker(
+                [-34.57517836, -58.43501353],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_5472ee09d531f6805440db42b68d337c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bac0a6a977e7e9eeb01db395223ebd4c.setIcon(icon_5472ee09d531f6805440db42b68d337c);
+        
+    
+            marker_bac0a6a977e7e9eeb01db395223ebd4c.bindTooltip(
+                `<div>
+                     Estacion: MINISTRO CARRANZA - MIGUEL ABUELO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3dd3a714a568db8e474b5428da6446b = L.marker(
+                [-34.57001231, -58.44466815],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_d57931337c1eff0ad585ca23a2d0b471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c3dd3a714a568db8e474b5428da6446b.setIcon(icon_d57931337c1eff0ad585ca23a2d0b471);
+        
+    
+            marker_c3dd3a714a568db8e474b5428da6446b.bindTooltip(
+                `<div>
+                     Estacion: OLLEROS<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c8af3b54826d764ef903d39b906a1bc = L.marker(
+                [-34.56621524, -58.4521256],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_f9d7ff1cf7996e7d66fc25866ee5f92a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2c8af3b54826d764ef903d39b906a1bc.setIcon(icon_f9d7ff1cf7996e7d66fc25866ee5f92a);
+        
+    
+            marker_2c8af3b54826d764ef903d39b906a1bc.bindTooltip(
+                `<div>
+                     Estacion: JOSE HERNANDEZ<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d76546f3795ab9fa8e8d5364c64d4a35 = L.marker(
+                [-34.56230909, -58.45648913],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_efe4890738558235ab4165192e5d90b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d76546f3795ab9fa8e8d5364c64d4a35.setIcon(icon_efe4890738558235ab4165192e5d90b0);
+        
+    
+            marker_d76546f3795ab9fa8e8d5364c64d4a35.bindTooltip(
+                `<div>
+                     Estacion: JURAMENTO<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2cf5f3345ca83f869325eed9777b702 = L.marker(
+                [-34.58719785, -58.45502929],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_900151e6b2e37ef408d4eed4515d4756 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a2cf5f3345ca83f869325eed9777b702.setIcon(icon_900151e6b2e37ef408d4eed4515d4756);
+        
+    
+            marker_a2cf5f3345ca83f869325eed9777b702.bindTooltip(
+                `<div>
+                     Estacion: FEDERICO LACROZE<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22a7cf369200f12f980ddf18e5929db = L.marker(
+                [-34.64331216, -58.46165176],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_9cbfc39881bfe4042ec2c653c7bac9a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e22a7cf369200f12f980ddf18e5929db.setIcon(icon_9cbfc39881bfe4042ec2c653c7bac9a9);
+        
+    
+            marker_e22a7cf369200f12f980ddf18e5929db.bindTooltip(
+                `<div>
+                     Estacion: PLAZA DE LOS VIRREYES - EVA PERON<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5c53213889f8f9196993b790f2fe174 = L.marker(
+                [-34.64013735, -58.45789176],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_97c3e35726934496a5e0625fa567000f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c5c53213889f8f9196993b790f2fe174.setIcon(icon_97c3e35726934496a5e0625fa567000f);
+        
+    
+            marker_c5c53213889f8f9196993b790f2fe174.bindTooltip(
+                `<div>
+                     Estacion: VARELA<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_503c3bf94ca1125516c978907e08db3e = L.marker(
+                [-34.60780234, -58.37395581],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_2e7be6cb9357a2034529504fdbd6fb9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_503c3bf94ca1125516c978907e08db3e.setIcon(icon_2e7be6cb9357a2034529504fdbd6fb9c);
+        
+    
+            marker_503c3bf94ca1125516c978907e08db3e.bindTooltip(
+                `<div>
+                     Estacion: CATEDRAL<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac28d5428351e246169f54bd3b8d6a14 = L.marker(
+                [-34.60881031, -58.3709685],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_02ebaf99250206ec55bbfd4a653f1139 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ac28d5428351e246169f54bd3b8d6a14.setIcon(icon_02ebaf99250206ec55bbfd4a653f1139);
+        
+    
+            marker_ac28d5428351e246169f54bd3b8d6a14.bindTooltip(
+                `<div>
+                     Estacion: PLAZA DE MAYO<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3747bdb84ac1f3a755421991f21b2b15 = L.marker(
+                [-34.55564177, -58.46237841],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_7ef5c0e24c5c67d8d771746b13b435dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3747bdb84ac1f3a755421991f21b2b15.setIcon(icon_7ef5c0e24c5c67d8d771746b13b435dd);
+        
+    
+            marker_3747bdb84ac1f3a755421991f21b2b15.bindTooltip(
+                `<div>
+                     Estacion: CONGRESO DE TUCUMAN<br>Linea: D
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8229bd668a6d5c728ffb921e1cdcf04c = L.marker(
+                [-34.6029895, -58.36992985],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_0e4f858308f8e52cf4609cabb2b68c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8229bd668a6d5c728ffb921e1cdcf04c.setIcon(icon_0e4f858308f8e52cf4609cabb2b68c9c);
+        
+    
+            marker_8229bd668a6d5c728ffb921e1cdcf04c.bindTooltip(
+                `<div>
+                     Estacion: LEANDRO N. ALEM<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5aefc4b629050ad873942de6271f5bb8 = L.marker(
+                [-34.58409462, -58.4662272],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_9d106de69ad55c71ea12692d4a4c8d94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5aefc4b629050ad873942de6271f5bb8.setIcon(icon_9d106de69ad55c71ea12692d4a4c8d94);
+        
+    
+            marker_5aefc4b629050ad873942de6271f5bb8.bindTooltip(
+                `<div>
+                     Estacion: TRONADOR - VILLA ORTUZAR<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1d65cebb3521913a00495c9f63f3f3d = L.marker(
+                [-34.58124885, -58.47424083],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_0f55be40db546a097c802d90baf0409f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1d65cebb3521913a00495c9f63f3f3d.setIcon(icon_0f55be40db546a097c802d90baf0409f);
+        
+    
+            marker_f1d65cebb3521913a00495c9f63f3f3d.bindTooltip(
+                `<div>
+                     Estacion: DE LOS INCAS -PQUE. CHAS<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5817da13d302ee6b9e883661dd527605 = L.marker(
+                [-34.62666659, -58.4567098],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_5dae07800aafd9224c5a1cc8fbaf884f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_5817da13d302ee6b9e883661dd527605.setIcon(icon_5dae07800aafd9224c5a1cc8fbaf884f);
+        
+    
+            marker_5817da13d302ee6b9e883661dd527605.bindTooltip(
+                `<div>
+                     Estacion: CARABOBO<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cf0d5a74c6b92b2cbd09665a64713ca = L.marker(
+                [-34.62352895, -58.44864765],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_8436b9f8b81c21ea1028291bebaaab15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_2cf0d5a74c6b92b2cbd09665a64713ca.setIcon(icon_8436b9f8b81c21ea1028291bebaaab15);
+        
+    
+            marker_2cf0d5a74c6b92b2cbd09665a64713ca.bindTooltip(
+                `<div>
+                     Estacion: PUAN<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6208c410c08153462520bcf69cd2d19a = L.marker(
+                [-34.6044902, -58.40545033],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_77a863a19ec2aca8280d35b86630b072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6208c410c08153462520bcf69cd2d19a.setIcon(icon_77a863a19ec2aca8280d35b86630b072);
+        
+    
+            marker_6208c410c08153462520bcf69cd2d19a.bindTooltip(
+                `<div>
+                     Estacion: CORRIENTES<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c41159c488f81d0dbbf9ad36f2d4b82 = L.marker(
+                [-34.63840599, -58.40579483],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_1f8ad1a90648e95b893d035dae9d5295 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c41159c488f81d0dbbf9ad36f2d4b82.setIcon(icon_1f8ad1a90648e95b893d035dae9d5295);
+        
+    
+            marker_2c41159c488f81d0dbbf9ad36f2d4b82.bindTooltip(
+                `<div>
+                     Estacion: PARQUE PATRICIOS<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a59fc7d3527c33854cc33a2905fbdc02 = L.marker(
+                [-34.64126894, -58.41238515],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_12780dd7a45b73ed80d4cc0de38e226f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a59fc7d3527c33854cc33a2905fbdc02.setIcon(icon_12780dd7a45b73ed80d4cc0de38e226f);
+        
+    
+            marker_a59fc7d3527c33854cc33a2905fbdc02.bindTooltip(
+                `<div>
+                     Estacion: HOSPITALES<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93c4080a8b0983e2da4a0fad05685075 = L.marker(
+                [-34.57779738, -58.4810135],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_211bd282060c99d7c70700a0c45b56a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_93c4080a8b0983e2da4a0fad05685075.setIcon(icon_211bd282060c99d7c70700a0c45b56a0);
+        
+    
+            marker_93c4080a8b0983e2da4a0fad05685075.bindTooltip(
+                `<div>
+                     Estacion: ECHEVERRIA<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7863578d34d951c4d4fcc134a763e8c = L.marker(
+                [-34.57431891, -58.48638535],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_066edafb2cd326cb6b55952a54e7fd25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c7863578d34d951c4d4fcc134a763e8c.setIcon(icon_066edafb2cd326cb6b55952a54e7fd25);
+        
+    
+            marker_c7863578d34d951c4d4fcc134a763e8c.bindTooltip(
+                `<div>
+                     Estacion: JUAN MANUEL DE ROSAS - VILLA URQUIZA<br>Linea: B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a616f77b7a21ac73117639d8574ba8b7 = L.marker(
+                [-34.63070709, -58.46963963],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_d820ea83f40ed5b61b344457b7b5bfcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_a616f77b7a21ac73117639d8574ba8b7.setIcon(icon_d820ea83f40ed5b61b344457b7b5bfcb);
+        
+    
+            marker_a616f77b7a21ac73117639d8574ba8b7.bindTooltip(
+                `<div>
+                     Estacion: SAN PEDRITO<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75398cb7d6a3ea0ec4412959625ec751 = L.marker(
+                [-34.62908723, -58.46354051],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_58ccf25656bc6ccc27f8fb3a6795a150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_75398cb7d6a3ea0ec4412959625ec751.setIcon(icon_58ccf25656bc6ccc27f8fb3a6795a150);
+        
+    
+            marker_75398cb7d6a3ea0ec4412959625ec751.bindTooltip(
+                `<div>
+                     Estacion: SAN JOSE DE FLORES<br>Linea: A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_371c5572202b9e7081c7bdcd86a693a8 = L.marker(
+                [-34.59845511, -58.4037215],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_e523b8256c2427dec000d3acd1403a4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_371c5572202b9e7081c7bdcd86a693a8.setIcon(icon_e523b8256c2427dec000d3acd1403a4f);
+        
+    
+            marker_371c5572202b9e7081c7bdcd86a693a8.bindTooltip(
+                `<div>
+                     Estacion: CORDOBA<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e67421002b0b11b5a6c65357f305201 = L.marker(
+                [-34.58746155, -58.39721558],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_0d31e1a8adff35be2388357729c18ceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0e67421002b0b11b5a6c65357f305201.setIcon(icon_0d31e1a8adff35be2388357729c18ceb);
+        
+    
+            marker_0e67421002b0b11b5a6c65357f305201.bindTooltip(
+                `<div>
+                     Estacion: LAS HERAS<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe5386b52c0e86036b279b991dec07fd = L.marker(
+                [-34.5945254, -58.40237618],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_aadb63dbcf9dc31dd373d04ffddc1387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe5386b52c0e86036b279b991dec07fd.setIcon(icon_aadb63dbcf9dc31dd373d04ffddc1387);
+        
+    
+            marker_fe5386b52c0e86036b279b991dec07fd.bindTooltip(
+                `<div>
+                     Estacion: SANTA FE - CARLOS JAUREGUI<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbf2dc4df0130092a5d40cd6967407ee = L.marker(
+                [-34.58303634, -58.39101883],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_8fdf320e95422d3a2d6e3f2977e6761c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dbf2dc4df0130092a5d40cd6967407ee.setIcon(icon_8fdf320e95422d3a2d6e3f2977e6761c);
+        
+    
+            marker_dbf2dc4df0130092a5d40cd6967407ee.bindTooltip(
+                `<div>
+                     Estacion: FACULTAD DE DERECHO - JULIETA LANTERI<br>Linea: H
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b25c250fbbb0cb003f5c9d48f793755 = L.marker(
+                [-34.59211436, -58.37584984],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_6b59e6247bef0fee23603d8a5faf016f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9b25c250fbbb0cb003f5c9d48f793755.setIcon(icon_6b59e6247bef0fee23603d8a5faf016f);
+        
+    
+            marker_9b25c250fbbb0cb003f5c9d48f793755.bindTooltip(
+                `<div>
+                     Estacion: RETIRO<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b391a01d76319109f9f0e737118480e9 = L.marker(
+                [-34.59659682, -58.37170033],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_aafa48dd39ca613dacde1cddc9b80902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b391a01d76319109f9f0e737118480e9.setIcon(icon_aafa48dd39ca613dacde1cddc9b80902);
+        
+    
+            marker_b391a01d76319109f9f0e737118480e9.bindTooltip(
+                `<div>
+                     Estacion: CATALINAS<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f584cc025fed69e88f34cb57b5382469 = L.marker(
+                [-34.60301391, -58.3704125],
+                {}
+            ).addTo(map_6135b3752a30eac12acfaf0a6c68dd69);
+        
+    
+            var icon_becaae78d344eca4695d8a6f4fbfc358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "subway", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f584cc025fed69e88f34cb57b5382469.setIcon(icon_becaae78d344eca4695d8a6f4fbfc358);
+        
+    
+            marker_f584cc025fed69e88f34cb57b5382469.bindTooltip(
+                `<div>
+                     Estacion: CORREO CENTRAL<br>Linea: E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
